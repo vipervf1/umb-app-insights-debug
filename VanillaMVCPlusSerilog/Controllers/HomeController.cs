@@ -11,10 +11,17 @@ namespace VanillaMVCPlusSerilog.Controllers {
         }
 
         public IActionResult Index() {
+            _logger.LogInformation("Someone Viewed the Index");
+
+            if (Request.Query.ContainsKey("error")) {
+                throw new Exception("Someone found the error inducer.");
+            }
+
             return View();
         }
 
         public IActionResult Privacy() {
+            _logger.LogWarning("Someone is interested in the Privacy Policy");
             return View();
         }
 
