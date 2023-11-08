@@ -1,4 +1,10 @@
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddLogging(configure => {
+    configure.AddSerilog();
+});
 
 builder.Services.AddApplicationInsightsTelemetry();
 
