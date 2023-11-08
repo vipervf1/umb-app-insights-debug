@@ -1,4 +1,5 @@
 # Application Insight Debugging
+Backup databases are in `/backups` for each Umbraco version. To get into the backoffice `support@umbraco.com` and password `LetMeIn###`
 
 ## Vanilla MVC
 Vanilla MVC project. 
