@@ -31,6 +31,8 @@ namespace UmbracoV12PlusSerilogAISink {
                 .AddDeliveryApi()
                 .AddComposers()
                 .Build();
+
+            services.AddApplicationInsightsTelemetry();
         }
 
         /// <summary>
